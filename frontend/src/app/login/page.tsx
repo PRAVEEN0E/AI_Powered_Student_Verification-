@@ -180,6 +180,85 @@ export default function LoginPage() {
                 </>
               )}
             </button>
+
+            {/* Quick-fill Demo Credentials */}
+            <div className="mt-5 pt-4 border-t border-slate-200">
+              <div className="flex items-center justify-between mb-2.5">
+                <span className="text-[11px] font-bold uppercase tracking-wider text-slate-500">
+                  Demo Credentials (Click to Fill)
+                </span>
+                <span className="text-[10px] bg-blue-100 text-blue-700 font-semibold px-2 py-0.5 rounded-full">
+                  Instant Test
+                </span>
+              </div>
+              <div className="grid grid-cols-1 gap-2">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setEmail('vcet@gmail.com');
+                    setPassword('Pass@123');
+                  }}
+                  className="w-full p-2.5 rounded-xl border border-blue-200 bg-blue-50/70 hover:bg-blue-100/80 transition text-left flex items-center justify-between group"
+                >
+                  <div>
+                    <div className="text-xs font-bold text-blue-900 group-hover:text-blue-950 flex items-center gap-1.5">
+                      <Building2 className="w-3.5 h-3.5 text-blue-600" />
+                      <span>Velalar College Admin (VCET)</span>
+                    </div>
+                    <div className="text-[11px] text-blue-700 font-mono mt-0.5">
+                      vcet@gmail.com • <span className="text-blue-900 font-bold">Pass@123</span>
+                    </div>
+                  </div>
+                  <span className="text-[10px] bg-blue-600 text-white px-2 py-1 rounded-md font-semibold">
+                    Fill
+                  </span>
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => {
+                    setEmail('national.admin@aicte-india.gov.in');
+                    setPassword('Admin@1234');
+                  }}
+                  className="w-full p-2.5 rounded-xl border border-purple-200 bg-purple-50/70 hover:bg-purple-100/80 transition text-left flex items-center justify-between group"
+                >
+                  <div>
+                    <div className="text-xs font-bold text-purple-900 group-hover:text-purple-950 flex items-center gap-1.5">
+                      <ShieldCheck className="w-3.5 h-3.5 text-purple-600" />
+                      <span>AICTE National Admin</span>
+                    </div>
+                    <div className="text-[11px] text-purple-700 font-mono mt-0.5">
+                      national.admin@aicte-india.gov.in • <span className="text-purple-900 font-bold">Admin@1234</span>
+                    </div>
+                  </div>
+                  <span className="text-[10px] bg-purple-600 text-white px-2 py-1 rounded-md font-semibold">
+                    Fill
+                  </span>
+                </button>
+
+                <button
+                  type="button"
+                  onClick={() => {
+                    setEmail('talent@zoho.com');
+                    setPassword('Admin@1234');
+                  }}
+                  className="w-full p-2.5 rounded-xl border border-emerald-200 bg-emerald-50/70 hover:bg-emerald-100/80 transition text-left flex items-center justify-between group"
+                >
+                  <div>
+                    <div className="text-xs font-bold text-emerald-900 group-hover:text-emerald-950 flex items-center gap-1.5">
+                      <Briefcase className="w-3.5 h-3.5 text-emerald-600" />
+                      <span>Employer Verifier (Zoho)</span>
+                    </div>
+                    <div className="text-[11px] text-emerald-700 font-mono mt-0.5">
+                      talent@zoho.com • <span className="text-emerald-900 font-bold">Admin@1234</span>
+                    </div>
+                  </div>
+                  <span className="text-[10px] bg-emerald-600 text-white px-2 py-1 rounded-md font-semibold">
+                    Fill
+                  </span>
+                </button>
+              </div>
+            </div>
           </form>
         ) : (
           <form onSubmit={handleRegisterSubmit} className="space-y-3.5">

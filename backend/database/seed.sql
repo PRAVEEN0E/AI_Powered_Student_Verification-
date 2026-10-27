@@ -18,6 +18,7 @@ INSERT INTO institutions (id, aicte_code, name, state, district, address, contac
 ('11111111-0005-0005-0005-000000000005', '1-432891905', 'Thiagarajar College of Engineering', 'Tamil Nadu', 'Madurai', 'Thiruparankundram, Madurai - 625015', 'principal@tce.edu', '0452-2482240', TRUE),
 ('11111111-0006-0006-0006-000000000006', '1-432891906', 'Coimbatore Institute of Technology', 'Tamil Nadu', 'Coimbatore', 'Civil Aerodrome Post, Coimbatore - 641014', 'principal@cit.edu.in', '0422-2574071', TRUE),
 ('11111111-0007-0007-0007-000000000007', '1-432891907', 'SSN College of Engineering', 'Tamil Nadu', 'Chennai', 'Kalavakkam, Chennai - 603110', 'principal@ssn.edu.in', '044-27469700', TRUE),
+('11111111-0051-0051-0051-000000000051', '1-432891950', 'Velalar College of Engineering and Technology', 'Tamil Nadu', 'Erode', 'Perundurai Road, Thindal, Erode, Tamil Nadu 638012', 'principal@velalarengg.ac.in', '0424-2244201', TRUE),
 
 -- Maharashtra
 ('11111111-0008-0008-0008-000000000008', '1-532891001', 'College of Engineering Pune', 'Maharashtra', 'Pune', 'Wellesly Road, Shivajinagar, Pune - 411005', 'director@coep.ac.in', '020-25507000', TRUE),
@@ -102,6 +103,7 @@ INSERT INTO users (id, email, password_hash, full_name, role, institution_id, is
 ('22222222-0013-0013-0013-000000000013', 'principal@bmsce.ac.in', '$2b$10$RqccgISJ4Uzz8PQTbmxSi.xiNkhMIiZgTr46JwGkoQw0opGFU1Lci', 'Dr. Guruprasad, Principal BMSCE', 'COLLEGE_ADMIN', '11111111-0014-0014-0014-000000000014', TRUE),
 ('22222222-0014-0014-0014-000000000014', 'director@coep.ac.in', '$2b$10$RqccgISJ4Uzz8PQTbmxSi.xiNkhMIiZgTr46JwGkoQw0opGFU1Lci', 'Dr. S. S. Pande, Director COEP', 'COLLEGE_ADMIN', '11111111-0008-0008-0008-000000000008', TRUE),
 ('22222222-0015-0015-0015-000000000015', 'vit@vit.ac.in', '$2b$10$RqccgISJ4Uzz8PQTbmxSi.xiNkhMIiZgTr46JwGkoQw0opGFU1Lci', 'Dr. G. Viswanathan, Chancellor VIT', 'COLLEGE_ADMIN', '11111111-0046-0046-0046-000000000046', TRUE),
+('22222222-0016-0016-0016-000000000016', 'principal@velalarengg.ac.in', '$2b$10$RqccgISJ4Uzz8PQTbmxSi.xiNkhMIiZgTr46JwGkoQw0opGFU1Lci', 'Dr. M. Jayaraman, Principal VCET', 'COLLEGE_ADMIN', '11111111-0051-0051-0051-000000000051', TRUE),
 
 -- Verifiers (Recruiters)
 ('22222222-0050-0050-0050-000000000050', 'talent@zoho.com', '$2b$10$RqccgISJ4Uzz8PQTbmxSi.xiNkhMIiZgTr46JwGkoQw0opGFU1Lci', 'Priya Sharma, Senior Campus Partner - Zoho', 'VERIFIER', NULL, TRUE),
